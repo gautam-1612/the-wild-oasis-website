@@ -113,7 +113,7 @@ export async function updateBooking(formData) {
 }
 
 export async function signInAction() {
-  await signIn("google", { redirectTo: "/account" });
+  return signIn("google", { redirectTo: "/account" });
 }
 
 export async function signOutAction() {
